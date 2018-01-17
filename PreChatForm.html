@@ -15,8 +15,46 @@
   }
 })(); 
 </script>
+<!-- Snap-in chat code -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<!-- End Snap-in chat code -->
 </head>
 <body>
+<!-- Snap-in chat code -->  
+<style type='text/css'>
+.embeddedServiceHelpButton .helpButton .uiButton { background-color: #005290; font-family: "Salesforce Sans", sans-serif; }
+.embeddedServiceHelpButton .helpButton .uiButton:focus { outline: 1px solid #005290; }
+@font-face {
+font-family: 'Salesforce Sans';
+src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
+url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.ttf') format('truetype');
+}
+</style>
+<script type='text/javascript' src='https://service.force.com/embeddedservice/3.1/esw.min.js'></script>
+<script type='text/javascript'>
+var initESW = function(gslbBaseURL) {
+embedded_svc.settings.displayHelpButton = true; //Or false
+embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+// Settings for Live Agent
+embedded_svc.settings.avatarImgURL = '';
+embedded_svc.settings.prechatBackgroundImgURL = '';
+embedded_svc.settings.waitingStateBackgroundImgURL = '';
+embedded_svc.settings.smallCompanyLogoImgURL = '';
+
+embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+embedded_svc.settings.entryFeature = 'LiveAgent';
+
+embedded_svc.init('https://quicksilvr-dev-ed.my.salesforce.com', 'https://mfb-developer-edition.na88.force.com/', gslbBaseURL, '00Di0000000JP18', 'Chat', { baseLiveAgentContentURL: 'https://c.la1-c2-iad.salesforceliveagent.com/content', deploymentId: '572i0000000W7cM', buttonId: '573i0000000WBcT', baseLiveAgentURL: 'https://d.la1-c2-iad.salesforceliveagent.com/chat', eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1Y000000000BUAQ_16104ca20ff'}); };if (!window.embedded_svc) { var s = document.createElement('script'); s.setAttribute('src', 'https://quicksilvr-dev-ed.my.salesforce.com/embeddedservice/3.1/esw.min.js'); s.onload = function() { initESW(null); }; document.body.appendChild(s); } else { initESW('https://quicksilvr-dev-ed.my.salesforce.com'); }
+</script>
+<!-- End Snap-in chat code -->
+  
 <form method="post" id="prechatForm">
 
 <!-- Detail inputs -->

@@ -1,0 +1,47 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://arcdev--DEV.cs86.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00D7E0000008myy">
+<input type=hidden name="retURL" value="https://www.arcelik.com.tr/iletisim/?bs=1">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="hkhuatthanh@deloitte.de">                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+First Name:<input  id="00N7E0000016Tql" maxlength="80" name="00N7E0000016Tql" size="20" type="text" /><br>
+
+Last Name:<input  id="00N7E0000016Tqq" maxlength="80" name="00N7E0000016Tqq" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+Web Subject:<select  id="00N7E0000016TqR" name="00N7E0000016TqR" title="Web Subject"><option value="">--None--</option><option value="Information note">Information note</option>
+<option value="General">General</option>
+<option value="Proposal">Proposal</option>
+<option value="Complaint">Complaint</option>
+<option value="Service Request">Service Request</option>
+<option value="Congratulations/Thanks">Congratulations/Thanks</option>
+<option value="I can not become a member">I can not become a member</option>
+</select><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+<input type="submit" name="submit">
+
+</form>

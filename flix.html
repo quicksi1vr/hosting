@@ -17,13 +17,13 @@
 </p>
 
 <style type='text/css'>
-.embeddedServiceHelpButton .helpButton .uiButton { background-color: #A4A3A3; font-family: "Salesforce Sans", sans-serif; }
-.embeddedServiceHelpButton .helpButton .uiButton:focus { outline: 1px solid #A4A3A3; }
-@font-face {
+	.embeddedServiceHelpButton .helpButton .uiButton { background-color: #76D528; font-family: "Salesforce Sans", sans-serif; }
+	.embeddedServiceHelpButton .helpButton .uiButton:focus { outline: 1px solid #76D528; }
+	@font-face {
 	font-family: 'Salesforce Sans';
 	src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
 	url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.ttf') format('truetype');
-}
+	}
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
@@ -32,8 +32,8 @@
 embedded_svc.settings.displayHelpButton = true; //Or false
 embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+embedded_svc.settings.defaultMinimizedText = 'Would you like to chat with us?'; //(Defaults to Chat with an Expert)
+embedded_svc.settings.disabledMinimizedText = 'Chat is currently offline'; //(Defaults to Agent Offline)
 
 //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)

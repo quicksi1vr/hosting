@@ -19,7 +19,6 @@
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton { background-color: #73d700; font-family: "Salesforce Sans", sans-serif; }
 	.embeddedServiceHelpButton .helpButton .uiButton:focus { background-color: #73d700; outline: 1px solid #73d700; }
-	//.embeddedServiceHelpButton .helpButton .uiButton:offline { background-color: #8b8b8b; }
 	@font-face {
 	font-family: 'Salesforce Sans';
 	src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
@@ -34,7 +33,7 @@ embedded_svc.settings.displayHelpButton = true; //Or false
 embedded_svc.settings.language = 'it'; //For example, enter 'en' or 'en-US'
 
 embedded_svc.settings.defaultMinimizedText = 'Chatta con noi'; //(Defaults to Chat with an Expert)
-embedded_svc.settings.disabledMinimizedText = 'Chatta Offline'; //(Defaults to Agent Offline)
+embedded_svc.settings.disabledMinimizedText = 'Chatta Offline'; background-color: #8b8b8b; //(Defaults to Agent Offline)
 
 //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)

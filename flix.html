@@ -19,6 +19,7 @@
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton { background-color: #73d700; font-family: "Salesforce Sans", sans-serif; }
 	.embeddedServiceHelpButton .helpButton .uiButton:focus { background-color: #73d700; outline: 1px solid #73d700; }
+	.embeddedServiceHelpButton .helpButton .uiButton.helpButtonDisabled { background-color:#8b8b8b; }
 
 	@font-face {
 	font-family: 'Salesforce Sans';
@@ -48,8 +49,6 @@ embedded_svc.settings.disabledMinimizedText = 'Chatta Offline'; //(Defaults to A
 //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 
-//WIP Code
-//.embeddedServiceHelpButton .helpButton .uiButton.helpButtonDisabled { background-color:#8b8b8b; }
 
 embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 embedded_svc.settings.entryFeature = 'LiveAgent';
